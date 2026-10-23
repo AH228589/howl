@@ -16,6 +16,7 @@ const DEFAULTS = {
   riotApiKey: '', // the user's own key from developer.riotgames.com
   riotRoute: 'auto', // auto | americas | europe | asia | sea
   aramAuto: true, // collect ARAM stats in the background when a key is set
+  autoPublish: true, // push collected stats to the HOWL repository for friends (git checkout only)
   // Used when there is no key: ARAM stats published with the HOWL repository.
   sharedStatsUrl: 'https://raw.githubusercontent.com/AH228589/howl/main/shared/aram-stats.json',
 };

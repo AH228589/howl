@@ -1,6 +1,6 @@
 // Electron entry: the HOWL app window, the in-game overlay, hotkeys and the
 // wiring between the League client, the live game feed and the engine.
-const { app, BrowserWindow, ipcMain, globalShortcut, screen, shell } = require('electron');
+const { app, BrowserWindow, ipcMain, globalShortcut, screen, shell, Notification } = require('electron');
 const path = require('path');
 const fs = require('fs');
 const gamedata = require('./gamedata');
@@ -8,6 +8,7 @@ const { Lcu } = require('./lcu');
 const { LiveGame } = require('./live');
 const { GameStore } = require('./stats/store');
 const { AramStats } = require('./stats/aram');
+const { publishShared, isCheckout } = require('./stats/publish');
 const { Session } = require('./session');
 const { Settings } = require('./settings');
 const { AugmentReader } = require('./ocr/reader');
@@ -127,11 +128,42 @@ async function refreshShared() {
   broadcast('aram', aram.summary());
 }
 
+// Running from the HOWL git checkout (npm start) with a key: after each
+// collection run the stats are published for friends automatically.
+const canPublish = () => !app.isPackaged && isCheckout(ROOT);
+
+async function afterCrawl(status) {
+  if (status.error) {
+    if (/rejected/i.test(status.error)) keyExpired();
+    return;
+  }
+  if (!settings.get('autoPublish') || !canPublish() || !settings.get('riotApiKey')) return;
+  try {
+    const r = await publishShared({ aram, repoDir: ROOT, key: settings.get('riotApiKey') });
+    log(r.pushed ? `Published stats for friends: ${r.matches} ARAM matches` : 'Stats for friends already up to date');
+  } catch (e) {
+    log(`Publishing stats for friends failed: ${e.message}`);
+  }
+}
+
+// Development keys last 24 hours: a desktop notification (at most twice a
+// day) so a new one gets pasted and friends keep getting fresh stats.
+let lastKeyNudge = 0;
+function keyExpired() {
+  if (Date.now() - lastKeyNudge < 12 * 3600000) return;
+  lastKeyNudge = Date.now();
+  log('Riot API key expired: paste a new one in Settings');
+  if (!Notification.isSupported()) return;
+  const n = new Notification({ title: 'HOWL: Riot key expired', body: 'Paste a new development key in Settings to keep the ARAM stats fresh for you and your friends.' });
+  n.on('click', () => { appWin?.show(); appWin?.webContents.send('open-tab', 'settings'); });
+  n.show();
+}
+
 // The API key never goes back to a window; the UI only learns that one is
 // saved and its last four characters.
 function publicSettings() {
   const { riotApiKey, ...rest } = settings.all();
-  return { ...rest, riotApiKeySet: !!riotApiKey, riotApiKeyHint: riotApiKey ? riotApiKey.slice(-4) : '' };
+  return { ...rest, riotApiKeySet: !!riotApiKey, riotApiKeyHint: riotApiKey ? riotApiKey.slice(-4) : '', canPublish: canPublish() };
 }
 
 function registerIpc() {
@@ -193,7 +225,12 @@ async function boot() {
   const lcu = new Lcu({ override: process.env.HOWL_LCU });
   const live = new LiveGame({ base: process.env.HOWL_LIVE || undefined });
   aram = new AramStats({ file: path.join(app.getPath('userData'), 'aram-stats.json'), data, log });
-  aram.on('status', (s) => broadcast('aram', s));
+  let crawling = false;
+  aram.on('status', (s) => {
+    broadcast('aram', s);
+    if (crawling && !s.running) afterCrawl(s);
+    crawling = s.running;
+  });
   refreshShared();
   setInterval(refreshShared, 6 * 3600000);
   session = new Session({ lcu, live, store, data, community, settings, aram, log });

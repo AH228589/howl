@@ -27,8 +27,20 @@ function renderStatus() {
     <span class="dot ${c?.connected ? 'on' : ''}"></span>
     <span>${c?.connected ? esc(c.summoner?.name) : 'League client not found'}</span>
     ${c?.connected ? `<span class="chip">${esc(PHASES[state.phase] || state.phase)}${state.isMayhem ? ' · Mayhem' : ''}</span>` : ''}
-    <span class="chip">Patch ${esc(state?.data?.version || '...')}</span>`;
+    <span class="chip">Patch ${esc(state?.data?.version || '...')}</span>
+    ${keyExpired ? '<button class="chip expired" id="keyChip" title="Paste a new Riot API key in Settings">Riot key expired</button>' : ''}`;
+  $('#keyChip')?.addEventListener('click', () => showTab('settings'));
 }
+
+// A rejected key shows in the top bar until a new one is saved.
+let keyExpired = false;
+const watchKey = (s) => {
+  const now = !!(s && !s.shared && s.error && /rejected/i.test(s.error));
+  if (now !== keyExpired) { keyExpired = now; renderStatus(); }
+};
+window.howl.onAram(watchKey);
+window.howl.aramStatus().then(watchKey);
+window.howl.onOpenTab((name) => showTab(name));
 
 function itemCell(it, cls = '') {
   return `<div class="item ${cls}">${ui.icon(it.icon, it.name)}<span>${esc(it.name)}</span></div>`;
@@ -285,6 +297,8 @@ async function renderSettings() {
         <button class="btn" id="aramRun">Collect now</button>
         <button class="btn" id="aramStop">Stop</button>
         <span class="spacer small" id="aramStatus"></span>
+        ${settings.canPublish ? `<span class="small muted">Publish for friends</span>
+        <button class="switch ${settings.autoPublish ? 'on' : ''}" data-k="autoPublish" aria-label="Publish stats for friends automatically"></button>` : ''}
         <span class="small muted">Collect in the background</span>
         <button class="switch ${settings.aramAuto ? 'on' : ''}" data-k="aramAuto" aria-label="Collect in the background"></button>
       </div>

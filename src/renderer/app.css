@@ -121,3 +121,4 @@ table.list th { color: var(--muted); font-weight: 600; font-size: 0.75rem; text-
 .log { font-family: Consolas, monospace; font-size: 0.75rem; color: var(--muted); max-height: 14rem; overflow: auto; white-space: pre-wrap; }
 .kbd { font-family: Consolas, monospace; background: var(--panel-2); border: 0.06rem solid var(--line); border-radius: 0.3rem; padding: 0.05rem 0.35rem; }
 a { color: var(--ice); }
+.chip.expired { color: var(--ink); background: var(--loss); border-color: var(--loss); font-weight: 700; cursor: pointer; }

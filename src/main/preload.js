@@ -23,6 +23,7 @@ contextBridge.exposeInMainWorld('howl', {
   aramRun: () => ipcRenderer.invoke('aram:run'),
   aramStop: () => ipcRenderer.invoke('aram:stop'),
   onAram: on('aram'),
+  onOpenTab: on('open-tab'),
   open: (url) => ipcRenderer.invoke('open', url),
   debugOffer: (cards) => ipcRenderer.invoke('debug:offer', cards),
   debugCleared: (id) => ipcRenderer.invoke('debug:cleared', id),
