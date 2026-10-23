@@ -1,0 +1,250 @@
+id	nameId	name	rarity	hasText
+1001	ARAM_ImTheJuggernaut	Titan's Resolve	prismatic	yes
+1002	ARAM_ApexInventor	Apex Inventor	gold	yes
+1004	ARAM_BacktoBasics	Back To Basics	prismatic	yes
+1005	ARAM_WeeWooWeeWoo	Wee Woo Wee Woo	gold	yes
+1006	ARAM_BladeWaltz	Blade Waltz	prismatic	yes
+1007	ARAM_BluntForce	Blunt Force	silver	yes
+1011	ARAM_CantTouchThis	Can't Touch This	prismatic	yes
+1013	ARAM_CelestialBody	Celestial Body	gold	yes
+1015	ARAM_CircleofDeath	Circle of Death	prismatic	yes
+1018	ARAM_CourageoftheColossus	Courage of the Colossus	prismatic	yes
+1019	ARAM_Dashing	Dashing	prismatic	yes
+1020	ARAM_DawnbringersResolve	Dawnbringer's Resolve	gold	yes
+1022	ARAM_Deft	Deft	silver	yes
+1025	ARAM_DiveBomber	Dive Bomber	silver	yes
+1026	ARAM_DontBlink	Don't Blink	silver	yes
+1027	ARAM_Earthwake	Earthwake	prismatic	yes
+1028	ARAM_Erosion	Erosion	silver	yes
+1029	ARAM_EtherealWeapon	Ethereal Weapon	gold	yes
+1030	ARAM_Eureka	Eureka	prismatic	yes
+1034	VeilOfWarding	Veil of Warding	silver	yes
+1036	ARAM_Firebrand	Firebrand	gold	yes
+1037	ARAM_FirstAidKit	First-Aid Kit	silver	yes
+1038	ARAM_FromBeginningToEnd	From Beginning To End	gold	yes
+1041	ARAM_Goliath	Goliath	prismatic	yes
+1044	ARAM_IceCold	Ice Cold	silver	yes
+1045	ARAM_InfernalConduit	Infernal Conduit	prismatic	yes
+1046	ARAM_InfernalSoul	Infernal Soul	silver	yes
+1047	ARAM_ItsCritical	It's Critical	gold	yes
+1048	ARAM_JeweledGauntlet	Jeweled Gauntlet	prismatic	yes
+1051	ARAM_LightemUp	Light 'Em Up!	silver	yes
+1053	ARAM_MadScientist	Mad Scientist	prismatic	yes
+1054	ARAM_MasterofDuality	Master of Duality	prismatic	yes
+1056	ARAM_MindtoMatter	Mind to Matter	silver	yes
+1057	ARAM_MountainSoul	Mountain Soul	silver	yes
+1058	ARAM_MysticPunch	Mystic Punch	prismatic	yes
+1060	ARAM_OceanSoul	Ocean Soul	silver	yes
+1061	ARAM_OkBoomerang	Ok Boomerang	gold	yes
+1062	ARAM_OmniSoul	Omni Soul	prismatic	yes
+1063	ARAM_OutlawsGrit	Outlaw's Grit	gold	yes
+1064	ARAM_Perseverance	Perseverance	gold	yes
+1066	ARAM_QuantumComputing	Quantum Computing	prismatic	yes
+1067	ARAM_RabbleRousing	Rejuvenation	gold	yes
+1068	ARAM_Recursion	Recursion	gold	yes
+1071	ARAM_ScopierWeapons	Scopier Weapons	gold	yes
+1072	ARAM_SearingDawn	Searing Dawn	gold	yes
+1073	ARAM_ShadowRunner	Shadow Runner	silver	yes
+1074	ARAM_ShrinkRay	Shrink Ray	gold	yes
+1076	ARAM_SonicBoom	Sonic Boom	silver	yes
+1077	ARAM_SoulSiphon	Soul Siphon	gold	yes
+1079	ARAM_SymphonyofWar	Symphony of War	prismatic	yes
+1080	ARAM_TankItOrLeaveIt	Tank It Or Leave It	silver	yes
+1081	ARAM_TapDancer	Tap Dancer	prismatic	yes
+1084	ARAM_ThreadtheNeedle	Thread the Needle	gold	yes
+1087	ARAM_Typhoon	Typhoon	silver	yes
+1088	ARAM_UltimateRevolution	Ultimate Revolution	prismatic	yes
+1092	ARAM_Vulnerability	Vulnerability	gold	yes
+1095	ARAM_WindspeakersBlessing	Windspeaker's Blessing	prismatic	yes
+1097	ARAM_WitchfulThinking	Witchful Thinking	silver	yes
+1098	ARAM_WithHaste	With Haste	gold	yes
+1103	ARAM_BreadAndButter	Bread And Butter	gold	yes
+1104	ARAM_Minionmancer	Minionmancer	gold	yes
+1105	ARAM_Homeguard	Homeguard	silver	yes
+1112	ARAM_UltimateUnstoppable	Ultimate Unstoppable	silver	yes
+1113	ARAM_SkilledSniper	Skilled Sniper	gold	yes
+1115	ARAM_ScopiestWeapons	Scopiest Weapons	prismatic	yes
+1116	ARAM_Flashy	Flashy	gold	yes
+1118	ARAM_CriticalHealing	Critical Healing	gold	yes
+1129	ARAM_Marksmage	Marksmage	gold	yes
+1133	ARAM_MagicMissile	Magic Missile	gold	yes
+1134	ARAM_DrawYourSword	Draw Your Sword	prismatic	yes
+1136	ARAM_SlapAround	Slap Around	silver	yes
+1138	ARAM_Goredrink	Goredrink	silver	yes
+1141	ARAM_AllForYou	All For You	gold	yes
+1149	ARAM_Impassable	Impassable	gold	yes
+1150	ARAM_BreadAndJam	Bread And Jam	gold	yes
+1151	ARAM_BreadAndCheese	Bread and Cheese	gold	yes
+1152	ARAM_Quest_SteelYourHeart	Steel Your Heart	gold	yes
+1154	ARAM_Quest_UrfsChampion	Urf's Champion	prismatic	yes
+1156	ARAM_Quest_WoogletsWitchcap	Wooglet's Witchcap	prismatic	yes
+1170	ARAM_ScopedWeapons	Scoped Weapons	silver	yes
+1180	ARAM_BigBrain	Big Brain	gold	yes
+1181	ARAM_HeavyHitter	Heavy Hitter	silver	yes
+1187	ARAM_Flashbang	Flashbang	silver	yes
+1194	ARAM_FeyMagic	Fey Magic	prismatic	yes
+1195	ARAM_GiantSlayer	Giant Slayer	prismatic	yes
+1204	ARAM_StackosaurusRex	Stackosaurus Rex	silver	yes
+1205	ARAM_ADAPt	ADAPt	silver	yes
+1206	ARAM_escAPADe	escAPADe	silver	yes
+1211	ARAM_ItsKillingTime	It's Killing Time	gold	yes
+1214	ARAM_SpinToWin	Spin To Win	silver	yes
+1225	ARAM_DualWield	Dual Wield	prismatic	yes
+1237	ARAM_TransmuteGold	Transmute: Gold	silver	yes
+1238	ARAM_TransmutePrismatic	Transmute: Prismatic	gold	yes
+1243	ARAM_TransmuteChaos	Transmute: Chaos	prismatic	yes
+1301	ARAM_DivineIntervention	Divine Intervention	gold	yes
+1305	ARAM_LegDay	Leg Day	silver	yes
+1308	ARAM_Firefox	FireFox	silver	yes
+1310	ARAM_ClownCollege	Clown College	prismatic	yes
+1311	ARAM_Overflow	Overflow	gold	yes
+1314	MightyShield	Mighty Shield	silver	yes
+1315	SwiftAndSafe	Swift and Safe	silver	yes
+1318	ARAM_Upgrade_ZH	Upgrade Zhonya's	silver	yes
+1319	ARAM_Upgrade_Immolate	Upgrade Immolate	silver	yes
+1320	ARAM_Upgrade_Collector	Upgrade Collector	silver	yes
+1322	ARAM_GetExcited	Get Excited!	gold	yes
+1323	ARAM_Cruelty	Cruelty	prismatic	yes
+1324	ARAM_ProteinShake	Protein Shake	prismatic	yes
+1325	GlassCannon	Glass Cannon	prismatic	yes
+1326	Nightstalking	Nightstalking	gold	yes
+1327	Adamant	Adamant	silver	yes
+1328	CriticalRhythm	Critical Rhythm	gold	yes
+1329	BiggestSnowballEver	Biggest Snowball Ever	prismatic	yes
+1331	EmpyreanPromise	Empyrean Promise	prismatic	yes
+1332	OminousPact	Ominous Pact	prismatic	yes
+1333	EscapePlan	Escape Plan	silver	yes
+1334	SnowballUpgrade	Snowball Upgrade	gold	yes
+1335	Goldrend	Goldrend	prismatic	yes
+1336	ARAM_Upgrade_IE	Upgrade Infinity Edge	gold	yes
+1337	KingMe	King Me	prismatic	yes
+1343	Quest_Sneakerhead	Sneakerhead	prismatic	yes
+1344	FinalForm	Final Form	prismatic	yes
+1346	Vampirism	Vampirism	gold	yes
+1347	Poltergeist	Poltergeist	silver	yes
+1348	Flash2	Flash 2	silver	yes
+1349	UltimateAwakening	Ultimate Awakening	prismatic	yes
+1353	ARAM_TankEngine	Tank Engine	gold	yes
+1358	PinballSnowball	Pinball	gold	yes
+1361	ARAM_Quest_VoidImmolation	Icathia's Fall	prismatic	yes
+1373	ShrinkEngine	Shrink Engine	gold	yes
+1375	SoulEater	Soul Eater	gold	yes
+1379	Upgrade_SwordOfBlossom	Upgrade Sword of Blossoming Dawn	prismatic	yes
+1384	Donation	Donation	gold	yes
+1386	YouSpinMeRightRound	Spin Me Right Round	silver	yes
+1388	InfiniteRecursion	Infinite Recursion	prismatic	yes
+1389	HandOfBaron	Hand of Baron	prismatic	yes
+1390	ARAM_PhenomenalEvil	Phenomenal Evil	gold	yes
+1392	GoldenSnowball	Holy Snowball	prismatic	yes
+1401	GrowthSpurt	Growth Spurt	gold	yes
+1402	ARAM_StatsOnStatsOnStats	Stats on Stats on Stats!	prismatic	yes
+1403	ARAM_StatsOnStats	Stats on Stats!	gold	yes
+1404	ARAM_Stats	Stats!	silver	yes
+1413	ARAM_StuckInHereWithMe	Stuck In Here With Me	prismatic	yes
+1415	Twinfire	Twin Fire	silver	yes
+1416	HextechSoul	Hextech Soul	silver	yes
+1420	Sonata	Sonata	gold	yes
+1421	PromQueen	Prom Queen	prismatic	yes
+1996	ARAM_Upgrade_Sheen	Upgrade Sheen	gold	yes
+2004	ARAM_EmpoweredByTheFaithful	Empowered By The Faithful	prismatic	no
+2005	ARAM_InfernoTriggered	Triggered Inferno	prismatic	no
+2007	ARAM_LittleDevil	Devil on Your Shoulder	prismatic	no
+2009	ARAM_Zealot	Zealot	silver	yes
+2010	ARAM_DoubleTap	Double Tap	prismatic	yes
+2016	ARAM_Juiced	Juiced	silver	yes
+2018	ARAM_Purist_Caster	Purist - Caster	silver	yes
+2026	KillSecured	Kill Secured	silver	yes
+2032	FishBait	Shark Bait	gold	yes
+2034	SharkTempest	Shark Tempest	gold	yes
+2043	NatureIsHealing	Nature is Healing	gold	yes
+2054	SpellVolley	Tripleshot	prismatic	yes
+2055	ARAM_Multishot	Multishot	prismatic	no
+2062	Ability_SelfAOE_DoubleCast	Echo Cast	prismatic	yes
+2064	ARAM_Quickstep	Quickstep	gold	yes
+2065	ARAM_Terror	Terror	gold	yes
+2072	Missile_Split	Spell Split	prismatic	yes
+2073	ARAM_SustainingStrike	Siphon	silver	no
+2076	TitansPulse	Stay Resolute	silver	yes
+2077	DarkWind	Ravenous Bind	gold	no
+2078	ChainReaction	Chain Reaction	gold	yes
+2080	Snowbomb	Snowblast	gold	yes
+2083	BurstingTeeth	Tooth Fairy	gold	yes
+2087	ARAM_Archmage	Archmage	prismatic	yes
+2088	ARAM_Snowday	Snowday	silver	yes
+2091	EndlessDecimation	Endless Decimation	gold	yes
+2096	LittleExtraHelp	Lil' Extra Help	gold	yes
+2097	VoidDash	Void Dash	gold	yes
+2098	ARAM_EndlessHunt	En Passant	prismatic	yes
+2099	ARAM_DivineDomain	Rite of Ascension	prismatic	yes
+2100	ARAM_SpecializedRecursion	Pursuit of Haste	gold	no
+2102	PressureCooker	Pressure Cooker	gold	yes
+2103	ARAM_BangBang	From Downtown	gold	no
+2104	ARAM_SpiritBomb	Spirit Bomb	prismatic	no
+2107	ARAM_Hellbent	Hellbent	prismatic	no
+2108	SupportMain	Support Main	silver	no
+2109	SnapBack	Snap Back	gold	yes
+2111	Bonk	BONK!	gold	yes
+2115	SquishySlappyGrab	Squishy Slappy Grab	prismatic	no
+2116	SpecializedEmpowerment	Pursuit of Power	gold	no
+2119	Overextender	Overextender	gold	yes
+2123	Overloaded	Overloaded	prismatic	no
+2125	ItsGoTime	It's Go Time	silver	no
+2126	KeepGoing	Reload	gold	no
+2127	ForgedByTheMaster	Forged By The Master	silver	no
+2129	Terraind	Terrain'd	gold	no
+2131	DontChangeTheChannel	Don't Change the Channel	silver	no
+2132	WarlockJuicebox	Warlock Juicebox	gold	no
+2133	MercysStrike	Mercy's Strike	gold	yes
+2134	SurgeField	Surge Field	prismatic	no
+2135	Overkill	Pin Cushion	prismatic	no
+2136	TrustyWeapon	Trusty Weapon	silver	no
+2137	PatOnTheBack	Pat On The Back	gold	no
+2138	WardingWeapon	Adaptive Ward	silver	no
+2139	PinCushion	Porcupine	gold	no
+2140	Upgrade_Ravenous	Upgrade Ravenous Hydra	gold	no
+2141	Quest_UltraHydra	Ultra Hydra	prismatic	no
+2143	Upgrade_SunderedSky	Upgrade Sundered Sky	gold	no
+2144	DoubleDefense	Bolstered	silver	yes
+2148	DoubleStrike	Double Strike	silver	no
+2157	Upgrade_DeathDance	Upgrade Death's Dance	silver	no
+3004	GetJinxed	Get Jinxed	gold	no
+3016	ThirdTimesTheHarm	Third Times the Harm	prismatic	no
+3018	BigShot	Big Shot	prismatic	no
+3025	Sound_Barrier	Sound Barrier	silver	no
+3036	DoubleTime	Double Time	gold	no
+3039	Salvation	Salvation	gold	no
+3048	BouncingBees	Bouncing Bees	prismatic	no
+3049	ArmoredImpact	Armored Impact	gold	no
+3051	BlueBarrier	Blue Barrier	silver	no
+3052	HandsOffTheTalent	Hands off the Talent	silver	no
+3053	MoshMonster	Mosh Monster	prismatic	no
+3055	UltimateRecursion	Ultimate Recursion	silver	no
+3058	TickleMonster	Tickle Monster	gold	no
+3059	NoManaNoProblem	No Mana, No Problem	silver	no
+3063	GiftoftheDrowned	Gift of the Drowned	silver	no
+3071	BrassBlast	Brass Blast	gold	no
+3075	Recoil	Recoil	gold	no
+3078	TheBoomAndTheBass	The Boom and the Bass	gold	no
+3079	Totentanz	Totentanz	prismatic	no
+3081	WeaponOfDestiny	Weapon of Destiny	gold	no
+3085	FlowOfSpirit	Flow of Spirit	silver	no
+3086	BEES	BEES!!!	gold	no
+3088	CrimsonCobalt	CRIMSON COBALT	gold	no
+3094	LichBrain	Lich Brain	silver	no
+3116	TakeemDownDownDown	Take'em Down Down Down	gold	no
+3118	ArcaneAxiom	Arcane Axiom	gold	no
+3121	Fruitify	Fruitify	silver	no
+3123	JeweledBracelet	Jeweled Bracelet	gold	no
+3129	SapMagic	Sap Magic	gold	no
+3131	StillHere	Still Here	gold	no
+3132	HeavyIsTheCrown	Heavy Is The Crown	gold	yes
+3134	LonelyWarrior	Lonely Warrior	silver	no
+3149	GroupHug	Group Hug	prismatic	no
+3150	Upgrade_Stormsurge	Upgrade Stormsurge	gold	no
+3163	EnchantingButterflies	Enchanting Butterflies	gold	no
+3170	GoH_PentakillAug_Q	HEAVY	gold	no
+3171	GoH_PentakillAug_W	POWER	gold	no
+3172	GoH_PentakillAug_E	THRASH	gold	no
+3173	GoH_PentakillAug_R	DOOM	gold	no
+3176	GoH_PentakillAug_Generic	   	gold	no
+12317	ARAM_PandorasBox	Pandora's Box	prismatic	yes

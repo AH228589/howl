@@ -1,0 +1,58 @@
+:root {
+  --ink: #0b0d14;
+  --panel: #131724;
+  --panel-2: #1a2031;
+  --line: #262d42;
+  --text: #e8ecf6;
+  --muted: #8d96ad;
+  --ice: #6fe3ff;
+  --ice-dim: #2a8fb0;
+  --gold: #f1c75b;
+  --win: #4ade80;
+  --loss: #f87171;
+  --tier-s: #ffb547;
+  --tier-a: #c084fc;
+  --tier-b: #60a5fa;
+  --tier-c: #94a3b8;
+  --tier-d: #64748b;
+  --silver: #c7d2df;
+  --goldrar: #f5c76a;
+  --prismatic: #e879f9;
+  --radius: 0.6rem;
+  font-size: clamp(87.5%, 0.65rem + 0.3vw, 112.5%);
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body {
+  font-family: "Segoe UI Variable", "Segoe UI", system-ui, sans-serif;
+  color: var(--text);
+  line-height: 1.4;
+}
+button { font: inherit; color: inherit; cursor: pointer; }
+img { display: block; }
+
+.icon { width: 2.4rem; height: 2.4rem; border-radius: 0.35rem; border: 0.08rem solid var(--line); background: var(--panel-2); object-fit: cover; }
+.icon.sm { width: 1.7rem; height: 1.7rem; }
+.icon.lg { width: 3.4rem; height: 3.4rem; }
+.icon.round { border-radius: 50%; }
+
+.tier { display: inline-grid; place-items: center; min-width: 1.6rem; height: 1.6rem; padding: 0 0.3rem; border-radius: 0.35rem; font-weight: 800; color: #0b0d14; font-size: 0.95rem; }
+.tier.S { background: var(--tier-s); }
+.tier.A { background: var(--tier-a); }
+.tier.B { background: var(--tier-b); }
+.tier.C { background: var(--tier-c); }
+.tier.D { background: var(--tier-d); color: var(--text); }
+.tier.none { background: var(--line); color: var(--muted); }
+
+.rar-silver { --rar: var(--silver); }
+.rar-gold { --rar: var(--goldrar); }
+.rar-prismatic { --rar: var(--prismatic); }
+.rar { border-color: var(--rar, var(--line)) !important; }
+
+.chip { display: inline-block; padding: 0.1rem 0.5rem; border-radius: 1rem; background: var(--panel-2); border: 0.06rem solid var(--line); color: var(--muted); font-size: 0.78rem; white-space: nowrap; }
+.chip.good { color: var(--ice); border-color: var(--ice-dim); }
+
+.key { display: inline-grid; place-items: center; width: 1.5rem; height: 1.5rem; border-radius: 0.3rem; font-weight: 800; font-size: 0.8rem; background: var(--panel-2); border: 0.06rem solid var(--line); }
+.key.Q { color: #7dd3fc; } .key.W { color: #86efac; } .key.E { color: #fcd34d; } .key.R { color: #f9a8d4; }
+.key.now { background: var(--ice); color: var(--ink); border-color: var(--ice); box-shadow: 0 0 0.8rem var(--ice); }

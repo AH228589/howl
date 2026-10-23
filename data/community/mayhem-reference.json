@@ -1,0 +1,2210 @@
+{
+  "compiledAt": "2026-10-24",
+  "sources": [
+    {
+      "id": "wiki",
+      "url": "https://wiki.leagueoflegends.com/en-us/ARAM:_Mayhem/Augments",
+      "title": "ARAM: Mayhem/Augments (League of Legends Wiki)",
+      "patchOrDate": "accessed 2026-10-24; includes 26.21 augments (Totentanz, Get Jinxed, Pentakill)"
+    },
+    {
+      "id": "mayhemmeta",
+      "url": "https://mayhemmeta.com/augments",
+      "title": "Mayhem:Meta augment tier list and champion leaderboard (https://mayhemmeta.com/)",
+      "patchOrDate": "26.21, accessed 2026-10-24"
+    },
+    {
+      "id": "expcarry",
+      "url": "https://expcarry.com/lol-aram-mayhem-augments-tier-list",
+      "title": "ExpCarry: LoL ARAM Mayhem augments tier list (editorial shortlist)",
+      "patchOrDate": "26.21 (modified 2026-10-21, based on 26.20 data)"
+    },
+    {
+      "id": "expcarry-champions",
+      "url": "https://expcarry.com/lol-aram-mayhem-tier-list",
+      "title": "ExpCarry: LoL ARAM Mayhem champion tier list (named champions only)",
+      "patchOrDate": "26.20 (modified 2026-10-20)"
+    },
+    {
+      "id": "arammayhem",
+      "url": "https://arammayhem.com/augments/",
+      "title": "arammayhem.com augment tier list and champion tier list (https://arammayhem.com/tier-list/)",
+      "patchOrDate": "26.20 (data updated 2026-10-20)"
+    },
+    {
+      "id": "riot-dev",
+      "url": "https://www.leagueoflegends.com/en-gb/news/dev/dev-augmentmaxxing-aram-mayhem/",
+      "title": "Riot dev blog: Augmentmaxxing ARAM Mayhem (Traits phased out; Support Main quest)",
+      "patchOrDate": "2026-05-27 (patch 26.12)"
+    },
+    {
+      "id": "invenglobal",
+      "url": "https://www.invenglobal.com/articles/27480/35-new-augments-kda-and-pentakill-arrive-in-lol-aram-mayhem",
+      "title": "Inven Global: 35 new augments, K/DA and Pentakill arrive in ARAM: Mayhem",
+      "patchOrDate": "26.21 (Oct 2026)"
+    }
+  ],
+  "augments": {
+    "1001": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1002": {
+      "tier": "C",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1004": {
+      "tier": "S",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1005": {
+      "tier": "S",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1006": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1007": {
+      "tier": "A",
+      "tierSources": [
+        "mayhemmeta",
+        "expcarry",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1011": {
+      "tier": "C",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1013": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1015": {
+      "tier": "A",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1018": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1019": {
+      "tier": "C",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1020": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1022": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "expcarry",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1025": {
+      "tier": "C",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1026": {
+      "tier": "A",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1027": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta"
+      ],
+      "sets": []
+    },
+    "1028": {
+      "tier": "A",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1029": {
+      "tier": "A",
+      "tierSources": [
+        "mayhemmeta",
+        "expcarry",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1030": {
+      "tier": "S",
+      "tierSources": [
+        "mayhemmeta",
+        "expcarry",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1034": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta"
+      ],
+      "sets": []
+    },
+    "1036": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1037": {
+      "tier": "A",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1038": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1041": {
+      "tier": "A",
+      "tierSources": [
+        "mayhemmeta",
+        "expcarry",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1044": {
+      "tier": "C",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1045": {
+      "tier": "A",
+      "tierSources": [
+        "mayhemmeta",
+        "expcarry",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1046": {
+      "tier": "C",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1047": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1048": {
+      "tier": "A",
+      "tierSources": [
+        "mayhemmeta",
+        "expcarry",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1051": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1053": {
+      "tier": "S",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1054": {
+      "tier": "C",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1056": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1057": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1058": {
+      "tier": "A",
+      "tierSources": [
+        "mayhemmeta",
+        "expcarry",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1060": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1061": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1062": {
+      "tier": "A",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1063": {
+      "tier": "A",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1064": {
+      "tier": null,
+      "tierSources": [],
+      "sets": []
+    },
+    "1066": {
+      "tier": null,
+      "tierSources": [],
+      "sets": []
+    },
+    "1067": {
+      "tier": "C",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1068": {
+      "tier": "S",
+      "tierSources": [
+        "mayhemmeta",
+        "expcarry",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1071": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "expcarry",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1072": {
+      "tier": "C",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1073": {
+      "tier": "A",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1074": {
+      "tier": "C",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1076": {
+      "tier": "A",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1077": {
+      "tier": "A",
+      "tierSources": [
+        "mayhemmeta",
+        "expcarry",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1079": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1080": {
+      "tier": "A",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1081": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1084": {
+      "tier": "C",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1087": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1088": {
+      "tier": "C",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1092": {
+      "tier": "A",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1095": {
+      "tier": "A",
+      "tierSources": [
+        "mayhemmeta",
+        "expcarry",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1097": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1098": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1103": {
+      "tier": "C",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1104": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1105": {
+      "tier": "A",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1112": {
+      "tier": "C",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1113": {
+      "tier": "C",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1115": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1116": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta"
+      ],
+      "sets": []
+    },
+    "1118": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1129": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "expcarry",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1133": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "expcarry",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1134": {
+      "tier": "S",
+      "tierSources": [
+        "mayhemmeta",
+        "expcarry",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1136": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1138": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1141": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1149": {
+      "tier": "C",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1150": {
+      "tier": "C",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1151": {
+      "tier": "C",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1152": {
+      "tier": "S",
+      "tierSources": [
+        "mayhemmeta",
+        "expcarry",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1154": {
+      "tier": "A",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1156": {
+      "tier": "A",
+      "tierSources": [
+        "mayhemmeta",
+        "expcarry",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1170": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1180": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1181": {
+      "tier": "A",
+      "tierSources": [
+        "mayhemmeta",
+        "expcarry",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1187": {
+      "tier": "C",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1194": {
+      "tier": "C",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1195": {
+      "tier": "A",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1204": {
+      "tier": "S",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1205": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1206": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1211": {
+      "tier": "C",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1214": {
+      "tier": "A",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1225": {
+      "tier": "A",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1237": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta"
+      ],
+      "sets": []
+    },
+    "1238": {
+      "tier": "S",
+      "tierSources": [
+        "mayhemmeta",
+        "expcarry",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1243": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1301": {
+      "tier": "C",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1305": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1308": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1310": {
+      "tier": "S",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1311": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1314": {
+      "tier": "C",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1315": {
+      "tier": "A",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1318": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "expcarry",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1319": {
+      "tier": "A",
+      "tierSources": [
+        "mayhemmeta",
+        "expcarry",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1320": {
+      "tier": "C",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1322": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1323": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1324": {
+      "tier": "A",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1325": {
+      "tier": "D",
+      "tierSources": [
+        "mayhemmeta",
+        "expcarry",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1326": {
+      "tier": "C",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1327": {
+      "tier": null,
+      "tierSources": [],
+      "sets": []
+    },
+    "1328": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1329": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1331": {
+      "tier": "A",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1332": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1333": {
+      "tier": "A",
+      "tierSources": [
+        "mayhemmeta",
+        "expcarry",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1334": {
+      "tier": null,
+      "tierSources": [],
+      "sets": []
+    },
+    "1335": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1336": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1337": {
+      "tier": "D",
+      "tierSources": [
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1343": {
+      "tier": null,
+      "tierSources": [],
+      "sets": []
+    },
+    "1344": {
+      "tier": "A",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1346": {
+      "tier": null,
+      "tierSources": [],
+      "sets": []
+    },
+    "1347": {
+      "tier": "C",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1348": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1349": {
+      "tier": "C",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1353": {
+      "tier": "S",
+      "tierSources": [
+        "mayhemmeta",
+        "expcarry",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1358": {
+      "tier": "C",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1361": {
+      "tier": "S",
+      "tierSources": [
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1373": {
+      "tier": "S",
+      "tierSources": [
+        "mayhemmeta",
+        "expcarry",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1375": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1379": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta"
+      ],
+      "sets": []
+    },
+    "1384": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1386": {
+      "tier": "D",
+      "tierSources": [
+        "mayhemmeta",
+        "expcarry",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1388": {
+      "tier": "S",
+      "tierSources": [
+        "mayhemmeta",
+        "expcarry",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1389": {
+      "tier": "S",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1390": {
+      "tier": "A",
+      "tierSources": [
+        "mayhemmeta",
+        "expcarry",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1392": {
+      "tier": "C",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1401": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1402": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1403": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1404": {
+      "tier": "C",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1413": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1415": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1416": {
+      "tier": "C",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1420": {
+      "tier": "A",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1421": {
+      "tier": "C",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "1996": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "2004": {
+      "tier": "C",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": [],
+      "desc": "Blessed allies build Devotion stacks by damaging enemy champions; at 50 stacks you unleash a shockwave dealing magic damage (scales with heal and shield power) that executes low-health enemies."
+    },
+    "2005": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": [],
+      "desc": "Hitting different enemy champions builds up to 7 Style stacks that grant movement speed; at max stacks you fire a volley of shots at nearby enemies."
+    },
+    "2007": {
+      "tier": null,
+      "tierSources": [],
+      "sets": [],
+      "desc": "Slowly drains your current health (faster near enemy champions) in exchange for 20% bonus true damage and healing Life Remnants. The wiki lists it as disabled."
+    },
+    "2009": {
+      "tier": "A",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "2010": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "2016": {
+      "tier": "C",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "2018": {
+      "tier": "C",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "2026": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "2032": {
+      "tier": "A",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "2034": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "2043": {
+      "tier": "C",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "2054": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "2055": {
+      "tier": "D",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": [],
+      "desc": "Quest: hitting champions with a missile ability adds extra missiles over several tiers, up to 7 total; repeat hits on one target from a single cast deal reduced damage."
+    },
+    "2062": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "2064": {
+      "tier": "C",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "2065": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "2072": {
+      "tier": "C",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "2073": {
+      "tier": "C",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": [],
+      "desc": "Upgrades one ability so it heals you for 30% of the damage it deals to enemy champions."
+    },
+    "2076": {
+      "tier": "A",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "2077": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": [],
+      "desc": "Upgrades an immobilizing or grounding ability to deal bonus magic damage and heal you; the heal is larger on longer-cooldown abilities."
+    },
+    "2078": {
+      "tier": "C",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "2080": {
+      "tier": "C",
+      "tierSources": [
+        "mayhemmeta",
+        "expcarry",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "2083": {
+      "tier": "A",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "2087": {
+      "tier": "C",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "2088": {
+      "tier": "C",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "2091": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "2096": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "2097": {
+      "tier": null,
+      "tierSources": [],
+      "sets": []
+    },
+    "2098": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "2099": {
+      "tier": "C",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "2100": {
+      "tier": "C",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": [],
+      "desc": "Quest: hit enemies repeatedly with one chosen ability; each of two tiers gives that ability a big cooldown cut (roughly 80, then 160 ability haste)."
+    },
+    "2102": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "2103": {
+      "tier": "C",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": [],
+      "desc": "Quest: land 15 ability hits on champions from 600+ range; afterwards long-range ability hits call a meteor that hits harder the farther away the target is."
+    },
+    "2104": {
+      "tier": "S",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": [],
+      "desc": "Healing and shielding allies charges a bomb; when full it lands on the most wounded ally, healing and briefly shielding allies around them."
+    },
+    "2107": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": [],
+      "desc": "Hitting enemy champions builds up to 10 stacks; at max, lethal damage instead makes you briefly invulnerable, then revives you with bonus damage, speed and omnivamp (90s cooldown)."
+    },
+    "2108": {
+      "tier": null,
+      "tierSources": [],
+      "sets": [],
+      "desc": "Quest: heal or shield your allies. Reward: your teammates gain extra health regen scaled by your heals and shields on them."
+    },
+    "2109": {
+      "tier": null,
+      "tierSources": [],
+      "sets": []
+    },
+    "2111": {
+      "tier": "A",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "2115": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": [],
+      "desc": "After a short delay, tethers nearby enemies; your next basic attack yanks them in for magic damage, stuns them and shields you per enemy hit (30s cooldown)."
+    },
+    "2116": {
+      "tier": "C",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": [],
+      "desc": "Quest: hit enemy champions 10 times with a chosen ability; completing it makes that ability deal 30% more damage."
+    },
+    "2119": {
+      "tier": "A",
+      "tierSources": [
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "2123": {
+      "tier": "C",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": [],
+      "desc": "Upgrades an ability so its cooldown resets whenever you cast one of your other abilities."
+    },
+    "2125": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": [],
+      "desc": "Upgrades a duration-based ability to give 25-45% bonus movement speed while it is active."
+    },
+    "2126": {
+      "tier": null,
+      "tierSources": [],
+      "sets": [],
+      "desc": "During a duration-based ability, your basic attacks shave time off its cooldown. The wiki notes it appears disabled."
+    },
+    "2127": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": [],
+      "desc": "Damage from item effects and augment effects is increased by 45%."
+    },
+    "2129": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": [],
+      "desc": "Terrain created by your abilities deals magic damage to enemies; terrain from your ultimate deals triple damage."
+    },
+    "2131": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": [],
+      "desc": "Each second spent channeling grants a growing shield that decays quickly once the channel ends."
+    },
+    "2132": {
+      "tier": "A",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": [],
+      "desc": "Gain 10% omnivamp, plus 3% more per 100 ability power."
+    },
+    "2133": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "2134": {
+      "tier": "C",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": [],
+      "desc": "Casting your ultimate creates a zone giving 50 ability haste and 40% movement speed; your damage to champions there fires bonus magic missiles."
+    },
+    "2135": {
+      "tier": "C",
+      "tierSources": [
+        "mayhemmeta",
+        "expcarry",
+        "arammayhem"
+      ],
+      "sets": [],
+      "desc": "Basic attacks during an upgraded duration ability stick Nails into champions; they burst for physical damage when the effect ends and give you movement speed."
+    },
+    "2136": {
+      "tier": "C",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": [],
+      "desc": "Ability hits on enemy champions grant short-lived Friendship stacks, each increasing your damage by 5%."
+    },
+    "2137": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": [],
+      "desc": "Being near an allied champion grants you a shield and 30% movement speed for 3 seconds (9s cooldown)."
+    },
+    "2138": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": [],
+      "desc": "Upgrades an empowered ability so its hits give you armor or magic resist matching the target's adaptive damage type."
+    },
+    "2139": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": [],
+      "desc": "Stores damage taken from champions; once enough is stored, bursts around you for physical damage scaling with bonus armor and magic resist, slowing enemies."
+    },
+    "2140": {
+      "tier": "A",
+      "tierSources": [
+        "mayhemmeta"
+      ],
+      "sets": [],
+      "desc": "Ravenous Hydra gains 20% life steal and its Cleave can trigger on ability hits; also grants 500 gold."
+    },
+    "2141": {
+      "tier": "S",
+      "tierSources": [
+        "mayhemmeta"
+      ],
+      "sets": [],
+      "desc": "Lets you own multiple Hydra items; a quest to finish Profane, Ravenous and Titanic Hydra merges them into Ultra Hydra."
+    },
+    "2143": {
+      "tier": "C",
+      "tierSources": [
+        "mayhemmeta"
+      ],
+      "sets": [],
+      "desc": "Sundered Sky's Lightshield Strike heals 9% of missing health on a 5s cooldown; also grants 500 gold."
+    },
+    "2144": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    },
+    "2148": {
+      "tier": null,
+      "tierSources": [],
+      "sets": [],
+      "desc": "Upgrades an empowered-attack ability to apply on-hit effects a second time. The wiki notes it appears disabled."
+    },
+    "2157": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta"
+      ],
+      "sets": [],
+      "desc": "Death's Dance gains extra damage reduction and its Defy heal becomes instant and scales with bonus AD; also grants 250 gold."
+    },
+    "3004": {
+      "tier": "C",
+      "tierSources": [
+        "mayhemmeta"
+      ],
+      "sets": [],
+      "desc": "Replaces a summoner spell with a long rocket ride that explodes on enemies, structures or walls, dealing more damage the farther you traveled."
+    },
+    "3016": {
+      "tier": "C",
+      "tierSources": [
+        "mayhemmeta"
+      ],
+      "sets": [],
+      "desc": "Every third basic attack on a marked target deals bonus max-health true damage and grants a stack that adds more damage."
+    },
+    "3018": {
+      "tier": "C",
+      "tierSources": [
+        "mayhemmeta"
+      ],
+      "sets": [],
+      "desc": "Converts most of your attack speed into crit damage and grants bonus AD and crit damage."
+    },
+    "3025": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta"
+      ],
+      "sets": [],
+      "desc": "Shields you give yourself or allies also grant ghosting and a burst of decaying movement speed."
+    },
+    "3036": {
+      "tier": "C",
+      "tierSources": [
+        "mayhemmeta"
+      ],
+      "sets": [],
+      "desc": "Hitting a champion with two different abilities within 4s makes the second deal bonus magic damage from max mana and permanently grants max mana."
+    },
+    "3039": {
+      "tier": null,
+      "tierSources": [],
+      "sets": [],
+      "desc": "Dropping below 50% health releases a shockwave that damages and knocks back enemies and heals nearby allies (90s cooldown)."
+    },
+    "3048": {
+      "tier": null,
+      "tierSources": [],
+      "sets": [],
+      "desc": "Your first attack after casting bounces a bee to a nearby enemy; quest tiers add bonus AD and extra bounces."
+    },
+    "3049": {
+      "tier": "A",
+      "tierSources": [
+        "mayhemmeta"
+      ],
+      "sets": [],
+      "desc": "Your first attack after casting deals bonus physical damage, scaling with bonus armor, to the target and nearby enemies."
+    },
+    "3051": {
+      "tier": "S",
+      "tierSources": [
+        "mayhemmeta"
+      ],
+      "sets": [],
+      "desc": "Spending mana grants a brief shield scaled to the mana spent."
+    },
+    "3052": {
+      "tier": "C",
+      "tierSources": [
+        "mayhemmeta"
+      ],
+      "sets": [],
+      "desc": "Basic attacks against enemies near the edge of your attack range deal bonus physical damage."
+    },
+    "3053": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta"
+      ],
+      "sets": [],
+      "desc": "Casting your ultimate grants bonus health and slows nearby enemies; takedowns permanently strengthen the effect."
+    },
+    "3055": {
+      "tier": "C",
+      "tierSources": [
+        "mayhemmeta"
+      ],
+      "sets": [],
+      "desc": "Gain 50 ultimate haste."
+    },
+    "3058": {
+      "tier": null,
+      "tierSources": [],
+      "sets": [],
+      "desc": "Converts all bonus AD into attack speed and adds bonus on-hit magic damage to basic attacks."
+    },
+    "3059": {
+      "tier": null,
+      "tierSources": [],
+      "sets": [],
+      "desc": "Converts mana from items into ability power and grants 15% more ability power."
+    },
+    "3063": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta"
+      ],
+      "sets": [],
+      "desc": "Converts bonus health into lethality and grants some flat lethality."
+    },
+    "3071": {
+      "tier": "D",
+      "tierSources": [
+        "mayhemmeta"
+      ],
+      "sets": [],
+      "desc": "Replaces a summoner spell with a chargeable trumpet blast that deals magic damage and knocks enemies back."
+    },
+    "3075": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta"
+      ],
+      "sets": [],
+      "desc": "Upgrades an ability to deal 25% more damage and dash you backward when cast."
+    },
+    "3078": {
+      "tier": "S",
+      "tierSources": [
+        "mayhemmeta"
+      ],
+      "sets": [],
+      "desc": "After casting an ability, your next basic attack gains huge attack speed and bonus magic damage, plus a burst of decaying movement speed."
+    },
+    "3079": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta"
+      ],
+      "sets": [],
+      "desc": "Replaces a summoner spell with a few seconds of invulnerability; get a takedown in time to heal and cut its cooldown, or you are executed."
+    },
+    "3081": {
+      "tier": "A",
+      "tierSources": [
+        "mayhemmeta"
+      ],
+      "sets": [],
+      "desc": "One legendary item gains a passive where takedowns permanently add stats worth gold to it; that item can't be sold."
+    },
+    "3085": {
+      "tier": "A",
+      "tierSources": [
+        "mayhemmeta"
+      ],
+      "sets": [],
+      "desc": "Casting an empowered ability grants a large burst of bonus attack speed for 4 seconds."
+    },
+    "3086": {
+      "tier": "A",
+      "tierSources": [
+        "mayhemmeta"
+      ],
+      "sets": [],
+      "desc": "Ability hits on champions periodically launch a beehive whose swarm damages and slows enemies."
+    },
+    "3088": {
+      "tier": "C",
+      "tierSources": [
+        "mayhemmeta"
+      ],
+      "sets": [],
+      "desc": "Damaging champions marks them; your next attack on a marked target deals bonus magic damage and greatly cuts the upgraded ability's cooldown."
+    },
+    "3094": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta"
+      ],
+      "sets": [],
+      "desc": "Gain 30 ability power plus 4% of your bonus health as ability power."
+    },
+    "3116": {
+      "tier": "A",
+      "tierSources": [
+        "mayhemmeta"
+      ],
+      "sets": [],
+      "desc": "Hits on champions build stacks; the fifth stack consumes them for bonus magic damage based on missing health and heals you."
+    },
+    "3118": {
+      "tier": "A",
+      "tierSources": [
+        "mayhemmeta"
+      ],
+      "sets": [],
+      "desc": "Takedowns on champions you recently damaged refund 15-30% of your ultimate's cooldown."
+    },
+    "3121": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta"
+      ],
+      "sets": [],
+      "desc": "Takedowns drop Honeyfruit that heals whoever picks it up."
+    },
+    "3123": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta"
+      ],
+      "sets": [],
+      "desc": "Upgrades an ability so it can critically strike, and grants 25% crit chance."
+    },
+    "3129": {
+      "tier": "A",
+      "tierSources": [
+        "mayhemmeta"
+      ],
+      "sets": [],
+      "desc": "Your next basic attack deals bonus physical damage and heals you (20s cooldown, shortened by casting abilities)."
+    },
+    "3131": {
+      "tier": "S",
+      "tierSources": [
+        "mayhemmeta"
+      ],
+      "sets": [],
+      "desc": "Gain up to 200% attack speed and 35% life steal, scaling with your missing health."
+    },
+    "3132": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta"
+      ],
+      "sets": []
+    },
+    "3134": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta"
+      ],
+      "sets": [],
+      "desc": "Gain attack speed, armor and magic resist for each enemy champion near you."
+    },
+    "3149": {
+      "tier": "B",
+      "tierSources": [
+        "mayhemmeta"
+      ],
+      "sets": [],
+      "desc": "Upgrades a targeted heal or shield so it also affects the two closest allied champions near the target."
+    },
+    "3150": {
+      "tier": "A",
+      "tierSources": [
+        "mayhemmeta"
+      ],
+      "sets": [],
+      "desc": "Stormsurge's lightning deals max-health magic damage and spreads to nearby enemies; also grants 500 gold."
+    },
+    "3163": {
+      "tier": "S",
+      "tierSources": [
+        "mayhemmeta"
+      ],
+      "sets": [],
+      "desc": "Healing or shielding allies gathers butterflies; your next hit on an enemy champion fires them for magic damage."
+    },
+    "3170": {
+      "tier": null,
+      "tierSources": [],
+      "sets": [],
+      "desc": "Pentakill: your Q gains 20 ability haste, 10% more damage and stronger healing and shielding."
+    },
+    "3171": {
+      "tier": null,
+      "tierSources": [],
+      "sets": [],
+      "desc": "Pentakill: your W gains 20 ability haste, 10% more damage and stronger healing and shielding."
+    },
+    "3172": {
+      "tier": null,
+      "tierSources": [],
+      "sets": [],
+      "desc": "Pentakill: your E gains 20 ability haste, 10% more damage and stronger healing and shielding."
+    },
+    "3173": {
+      "tier": null,
+      "tierSources": [],
+      "sets": [],
+      "desc": "Pentakill: your ultimate gains 20 ability haste, 10% more damage and stronger healing and shielding."
+    },
+    "3176": {
+      "tier": null,
+      "tierSources": [],
+      "sets": []
+    },
+    "12317": {
+      "tier": "C",
+      "tierSources": [
+        "mayhemmeta",
+        "arammayhem"
+      ],
+      "sets": []
+    }
+  },
+  "sets": {},
+  "champions": {
+    "Aatrox": "C",
+    "Ahri": "A",
+    "Akali": "C",
+    "Akshan": "B",
+    "Alistar": "A",
+    "Ambessa": "B",
+    "Amumu": "B",
+    "Anivia": "C",
+    "Annie": "B",
+    "Aphelios": "B",
+    "Ashe": "C",
+    "Aurelion Sol": "S",
+    "Aurora": "B",
+    "Azir": "B",
+    "Bard": "B",
+    "Bel'Veth": "A",
+    "Blitzcrank": "C",
+    "Brand": "S",
+    "Braum": "C",
+    "Briar": "B",
+    "Caitlyn": "S",
+    "Camille": "B",
+    "Cassiopeia": "C",
+    "Cho'Gath": "C",
+    "Corki": "B",
+    "Darius": "B",
+    "Diana": "C",
+    "Dr. Mundo": "A",
+    "Draven": "B",
+    "Ekko": "S",
+    "Elise": "B",
+    "Evelynn": "A",
+    "Ezreal": "B",
+    "Fiddlesticks": "C",
+    "Fiora": "A",
+    "Fizz": "B",
+    "Galio": "B",
+    "Gangplank": "A",
+    "Garen": "C",
+    "Gnar": "C",
+    "Gragas": "B",
+    "Graves": "S",
+    "Gwen": "A",
+    "Hecarim": "S",
+    "Heimerdinger": "B",
+    "Hwei": "A",
+    "Illaoi": "C",
+    "Irelia": "B",
+    "Ivern": "B",
+    "Janna": "A",
+    "Jarvan IV": "C",
+    "Jax": "B",
+    "Jayce": "C",
+    "Jhin": "C",
+    "Jinx": "S",
+    "K'Sante": "D",
+    "Kai'Sa": "C",
+    "Kalista": "B",
+    "Karma": "C",
+    "Karthus": "A",
+    "Kassadin": "S",
+    "Katarina": "B",
+    "Kayle": "S",
+    "Kayn": "S",
+    "Kennen": "C",
+    "Kha'Zix": "B",
+    "Kindred": "C",
+    "Kled": "A",
+    "Kog'Maw": "B",
+    "LeBlanc": "D",
+    "Lee Sin": "D",
+    "Leona": "B",
+    "Lillia": "S",
+    "Lissandra": "C",
+    "Locke": "C",
+    "Lucian": "S",
+    "Lulu": "C",
+    "Lux": "C",
+    "Malphite": "C",
+    "Malzahar": "A",
+    "Maokai": "B",
+    "Master Yi": "S",
+    "Mel": "C",
+    "Milio": "B",
+    "Miss Fortune": "S",
+    "Mordekaiser": "B",
+    "Morgana": "S",
+    "Naafiri": "C",
+    "Nami": "B",
+    "Nasus": "B",
+    "Nautilus": "B",
+    "Neeko": "C",
+    "Nidalee": "C",
+    "Nilah": "S",
+    "Nocturne": "B",
+    "Nunu & Willump": "C",
+    "Olaf": "B",
+    "Orianna": "B",
+    "Ornn": "C",
+    "Pantheon": "B",
+    "Poppy": "B",
+    "Pyke": "C",
+    "Qiyana": "D",
+    "Quinn": "C",
+    "Rakan": "B",
+    "Rammus": "C",
+    "Rek'Sai": "B",
+    "Rell": "A",
+    "Renata Glasc": "B",
+    "Renekton": "C",
+    "Rengar": "A",
+    "Riven": "B",
+    "Rumble": "B",
+    "Ryze": "S",
+    "Samira": "C",
+    "Sejuani": "C",
+    "Senna": "B",
+    "Seraphine": "S",
+    "Sett": "S",
+    "Shaco": "B",
+    "Shen": "B",
+    "Shyvana": "B",
+    "Singed": "S",
+    "Sion": "A",
+    "Sivir": "B",
+    "Skarner": "C",
+    "Smolder": "S",
+    "Sona": "A",
+    "Soraka": "B",
+    "Swain": "A",
+    "Sylas": "B",
+    "Syndra": "B",
+    "Tahm Kench": "S",
+    "Taliyah": "B",
+    "Talon": "B",
+    "Taric": "A",
+    "Teemo": "S",
+    "Thresh": "B",
+    "Tristana": "B",
+    "Trundle": "A",
+    "Tryndamere": "B",
+    "Twisted Fate": "S",
+    "Twitch": "B",
+    "Udyr": "B",
+    "Urgot": "C",
+    "Varus": "C",
+    "Vayne": "S",
+    "Veigar": "A",
+    "Vel'Koz": "B",
+    "Vex": "B",
+    "Vi": "B",
+    "Viego": "B",
+    "Viktor": "A",
+    "Vladimir": "B",
+    "Volibear": "A",
+    "Warwick": "B",
+    "Wukong": "B",
+    "Xayah": "B",
+    "Xerath": "B",
+    "Xin Zhao": "S",
+    "Yasuo": "S",
+    "Yone": "S",
+    "Yorick": "C",
+    "Yunara": "A",
+    "Yuumi": "A",
+    "Zaahen": "S",
+    "Zac": "C",
+    "Zed": "B",
+    "Zeri": "B",
+    "Ziggs": "C",
+    "Zilean": "B",
+    "Zoe": "C",
+    "Zyra": "B"
+  }
+}

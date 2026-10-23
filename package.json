@@ -1,0 +1,56 @@
+{
+  "name": "howl",
+  "version": "0.1.0",
+  "description": "ARAM Mayhem companion: champ select tiers, build import, in-game overlay and augment helper.",
+  "main": "src/main/main.js",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "snapshot": "node scripts/snapshot.js",
+    "test": "node --test test/*.test.js",
+    "fake": "node test/fake-league.js",
+    "dist": "electron-builder --win portable",
+    "e2e": "node test/e2e.js",
+    "publish-stats": "node scripts/publish-stats.js"
+  },
+  "author": "Aleksandar Hristov",
+  "license": "MIT",
+  "dependencies": {
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "electron": "^44.7.0",
+    "electron-builder": "^26.15.3",
+    "selfsigned": "^2.4.1"
+  },
+  "build": {
+    "appId": "dev.ahristov.howl",
+    "productName": "HOWL",
+    "files": [
+      "src/**/*",
+      "data/**/*",
+      "package.json"
+    ],
+    "directories": {
+      "output": "dist",
+      "buildResources": "build"
+    },
+    "win": {
+      "target": [
+        "portable"
+      ],
+      "icon": "build/icon.png"
+    },
+    "asarUnpack": [
+      "src/main/ocr/*.ps1"
+    ],
+    "portable": {
+      "artifactName": "HOWL-${version}-portable.exe"
+    }
+  },
+  "productName": "HOWL",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AH228589/howl.git"
+  }
+}

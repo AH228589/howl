@@ -1,0 +1,48 @@
+html, body { background: transparent; overflow: hidden; height: 100vh; }
+
+/* Compact character strip. Size, opacity and position come from Settings. */
+#panel {
+  position: fixed; width: max-content; max-width: 15rem;
+  padding: 0.45rem 0.55rem;
+  background: rgba(10, 13, 22, 0.78);
+  border: 0.06rem solid rgba(111, 227, 255, 0.18);
+  border-radius: 0.55rem;
+  font-size: 0.72rem;
+  display: grid; gap: 0.35rem;
+}
+#panel:empty { display: none; }
+#panel.right { right: 0.6rem; transform-origin: right center; }
+#panel.left { left: 0.6rem; transform-origin: left center; }
+#panel.top { top: 6vh; }
+#panel.middle { top: 50%; translate: 0 -50%; }
+#panel.top.right, #panel.top.left { transform-origin: top right; }
+#panel.top.left { transform-origin: top left; }
+
+.line { display: flex; align-items: center; gap: 0.35rem; }
+.lbl { width: 2.6rem; flex: none; color: var(--muted); font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.06em; }
+.head .name { font-weight: 800; font-size: 0.8rem; }
+.head .lvl { color: var(--muted); }
+.levelup { margin-left: auto; display: flex; align-items: center; gap: 0.25rem; font-weight: 700; color: var(--ice); animation: pulse 1.2s ease-in-out infinite; }
+@keyframes pulse { 50% { opacity: 0.55; } }
+#panel .key { width: 1.15rem; height: 1.15rem; font-size: 0.62rem; border-radius: 0.22rem; }
+#panel .icon.sm { width: 1.35rem; height: 1.35rem; border-radius: 0.25rem; }
+.seq { display: flex; gap: 0.12rem; }
+.next .icon.sm:first-of-type { border-color: var(--ice); box-shadow: 0 0 0.45rem rgba(111, 227, 255, 0.45); }
+.nextname { color: var(--muted); font-size: 0.62rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.progress { display: flex; gap: 0.12rem; }
+.progress .icon.sm { width: 1.2rem; height: 1.2rem; opacity: 0.35; }
+.progress .icon.sm.have { opacity: 1; border-color: var(--win); }
+.gold b.up { color: var(--win); } .gold b.down { color: var(--loss); }
+
+/* augment badges, placed over each offered card */
+.badge {
+  position: fixed; transform: translate(-50%, calc(-100% - 0.5rem));
+  display: grid; justify-items: center; gap: 0.2rem;
+  padding: 0.35rem 0.55rem; min-width: 8rem; max-width: 14rem;
+  background: rgba(10, 13, 22, 0.88);
+  border: 0.1rem solid var(--line); border-radius: 0.55rem; text-align: center;
+}
+.badge .tier { font-size: 1.15rem; min-width: 2rem; height: 2rem; }
+.badge.best { border-color: var(--gold); box-shadow: 0 0 1.2rem rgba(241, 199, 91, 0.5); }
+.badge .pick { font-size: 0.64rem; font-weight: 800; letter-spacing: 0.08em; color: var(--gold); text-transform: uppercase; }
+.badge .why { font-size: 0.66rem; color: var(--muted); line-height: 1.25; }

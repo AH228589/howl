@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https://ddragon.leagueoflegends.com https://raw.communitydragon.org; style-src 'self' 'unsafe-inline'; script-src 'self'">
+  <title>HOWL</title>
+  <link rel="stylesheet" href="common.css">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand"><span class="logo">HOWL</span><span class="sub">ARAM: Mayhem companion</span></div>
+    <nav id="tabs">
+      <button data-tab="live" class="active">Live</button>
+      <button data-tab="builds">Builds</button>
+      <button data-tab="augments">Augments</button>
+      <button data-tab="stats">My stats</button>
+      <button data-tab="settings">Settings</button>
+    </nav>
+    <div class="status" id="status"></div>
+  </header>
+  <main>
+    <section id="tab-live" class="tab active"></section>
+    <section id="tab-builds" class="tab"></section>
+    <section id="tab-augments" class="tab"></section>
+    <section id="tab-stats" class="tab"></section>
+    <section id="tab-settings" class="tab"></section>
+  </main>
+  <script src="ui.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
