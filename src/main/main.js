@@ -130,7 +130,9 @@ async function refreshShared() {
 
 // Running from the HOWL git checkout (npm start) with a key: after each
 // collection run the stats are published for friends automatically.
-const canPublish = () => !app.isPackaged && isCheckout(ROOT);
+// Never from tests or a redirected (fake) Riot API: test data must not reach
+// friends.
+const canPublish = () => !app.isPackaged && !TEST && !process.env.HOWL_RIOT_API && isCheckout(ROOT);
 
 async function afterCrawl(status) {
   if (status.error) {
