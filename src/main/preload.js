@@ -24,7 +24,9 @@ contextBridge.exposeInMainWorld('howl', {
   aramStop: () => ipcRenderer.invoke('aram:stop'),
   onAram: on('aram'),
   onOpenTab: on('open-tab'),
+  onToast: on('toast'),
   open: (url) => ipcRenderer.invoke('open', url),
   debugOffer: (cards) => ipcRenderer.invoke('debug:offer', cards),
   debugCleared: (id) => ipcRenderer.invoke('debug:cleared', id),
+  debugToast: (text, kind) => ipcRenderer.invoke('debug:toast', text, kind),
 });

@@ -60,3 +60,27 @@ test('rerolls update one card at a time and short gaps are not picks', async () 
   assert.deepStrictEqual(cleared, [id('Get Jinxed')]);
   reader.trackCursor(false);
 });
+
+test('a re-scan pressed during a scan is queued, not dropped, and re-rates the cards', async () => {
+  const reader = new AugmentReader({ augments: data.augments });
+  const line = (text, x) => ({ text, words: [{ t: text, x, y: 300, w: 200, h: 30 }] });
+  let scans = 0;
+  reader.capture = async () => ({ file: 'x', height: 700, png: Buffer.alloc(0), screen: bounds, toScreen: (r) => ({ x: r.x, y: r.y, w: r.w, h: r.h }) });
+  reader.ocr = async () => {
+    scans++;
+    await new Promise((r) => setTimeout(r, 40));
+    return { ok: true, lines: [line('Big Brain', 100), line('Get Excited!', 600), line('Protein Shake', 1100)] };
+  };
+  const offers = [];
+  reader.on('offer', (cards) => offers.push(cards.length));
+
+  const background = reader.scan(); // the regular loop's scan
+  const hotkey = reader.scan({ force: true }); // pressed while it runs
+  assert.strictEqual(await reader.scan(), null, 'a second regular scan is skipped');
+  const [bg, hk] = await Promise.all([background, hotkey]);
+  assert.strictEqual(bg.length, 3);
+  assert.strictEqual(hk.length, 3, 'the hotkey scan ran and returned cards');
+  assert.strictEqual(scans, 2);
+  assert.deepStrictEqual(offers, [3, 3], 'the forced re-scan re-rated the same cards');
+  reader.trackCursor(false);
+});

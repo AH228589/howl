@@ -12,6 +12,8 @@ const DEFAULTS = {
   showGold: true,
   augmentReader: true, // read augment cards from the screen
   scanInterval: 1500,
+  hotkeyOverlay: 'Control+Shift+H', // show or hide the overlay
+  hotkeyScan: 'Control+Shift+J', // read the augment cards now
   allQueues: false, // also run outside ARAM: Mayhem (testing)
   riotApiKey: '', // the user's own key from developer.riotgames.com
   riotRoute: 'auto', // auto | americas | europe | asia | sea

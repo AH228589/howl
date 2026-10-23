@@ -28,6 +28,8 @@ class AugmentReader extends EventEmitter {
     this.runId = 0;
     this.pickDelay = 8000;
     this.recent = null;
+    this.queued = null;
+    this.waiters = [];
     this.log = log;
     this.proc = null;
     this.queue = [];
@@ -136,24 +138,47 @@ class AugmentReader extends EventEmitter {
     return { file, height: part.getSize().height, toScreen, png: part.toPNG(), screen: display.bounds };
   }
 
-  // keep: also save the captured image and what OCR read (Ctrl+Shift+J), so
-  // a misread can be checked afterwards.
-  async scan({ keep = false } = {}) {
-    if (this.busy) return null;
+  // keep: also save the captured image and what OCR read, so a misread can be
+  // checked afterwards. force: a re-scan asked for by the player (hotkey).
+  // Requests that arrive mid-scan are queued instead of dropped: with cards
+  // on screen the reader scans back to back, so a hotkey press almost always
+  // lands while a scan is running.
+  scan(opts = {}) {
+    if (this.busy) {
+      if (!opts.keep && !opts.force) return Promise.resolve(null);
+      this.queued = { ...this.queued, ...opts };
+      return new Promise((resolve) => this.waiters.push(resolve));
+    }
+    return this.runScan(opts);
+  }
+
+  async runScan({ keep = false, force = false } = {}) {
     this.busy = true;
+    let cards = null;
     try {
       const cap = await this.capture();
-      if (!cap) return null;
-      const res = await this.ocr(cap.file);
-      if (!res.ok) { this.log(`OCR failed: ${res.error}`); return null; }
-      const cards = findOffer(res.lines, this.index, cap.height, this.offer ? 1 : 2).map((c) => ({ id: c.id, rect: cap.toScreen(c) }));
-      if (keep) this.keepScan(cap, res, cards);
-      this.handle(cards, cap.screen);
-      return cards;
+      if (cap) {
+        const res = await this.ocr(cap.file);
+        if (!res.ok) this.log(`OCR failed: ${res.error}`);
+        else {
+          cards = findOffer(res.lines, this.index, cap.height, this.offer ? 1 : 2).map((c) => ({ id: c.id, rect: cap.toScreen(c) }));
+          if (keep) this.keepScan(cap, res, cards);
+          this.handle(cards, cap.screen);
+          // A requested re-scan re-rates the cards even if they did not change.
+          if (force && cards.length && this.offer) this.emit('offer', this.offer.cards);
+        }
+      }
     } catch (e) {
       this.log(`Augment scan failed: ${e.message}`);
-      return null;
     } finally { this.busy = false; }
+    if (this.queued) {
+      const next = this.queued;
+      const waiters = this.waiters.splice(0);
+      this.queued = null;
+      const queuedCards = await this.runScan(next);
+      waiters.forEach((resolve) => resolve(queuedCards));
+    }
+    return cards;
   }
 
   keepScan(cap, res, cards) {

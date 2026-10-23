@@ -135,7 +135,7 @@ async function main() {
     await sleep(800);
     // Save a key through the Settings box and let the crawler run.
     await appP.eval(`document.querySelector('#apiKey').value=${JSON.stringify(riot.key)};document.querySelector('#saveKey').click()`);
-    check('ARAM stats collected from the Riot API', !!await waitEval(appP, `/ARAM matches collected/.test(document.querySelector('#aramStatus')?.textContent || '')`, 30000));
+    check('ARAM stats collected from the Riot API', !!await waitEval(appP, `/\\d+ ARAM matches/.test(document.querySelector('#aramStatus')?.textContent || '')`, 30000));
     const exposed = await appP.eval('(async()=>JSON.stringify(await window.howl.settings()))()');
     check('API key never reaches the window', !exposed.includes(riot.key) && exposed.includes('"riotApiKeySet":true'));
     await sleep(500);

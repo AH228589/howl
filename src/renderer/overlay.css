@@ -1,48 +1,91 @@
+/* In-game overlay. The root size follows the screen height (the way game UIs
+   scale), so the panel and badges look the same at 1080p, 1440p and 4K; the
+   Size setting scales on top of that. */
+html { font-size: clamp(0.68rem, 1.45vh, 1.85rem); }
 html, body { background: transparent; overflow: hidden; height: 100vh; }
 
-/* Compact character strip. Size, opacity and position come from Settings. */
+/* ---------- character panel ---------- */
 #panel {
-  position: fixed; width: max-content; max-width: 15rem;
-  padding: 0.45rem 0.55rem;
-  background: rgba(10, 13, 22, 0.78);
-  border: 0.06rem solid rgba(111, 227, 255, 0.18);
-  border-radius: 0.55rem;
-  font-size: 0.72rem;
-  display: grid; gap: 0.35rem;
+  position: fixed; width: max-content; max-width: 16rem;
+  padding: 0.55rem 0.6rem 0.6rem;
+  display: grid; gap: 0.4rem;
+  font-size: 0.74rem;
+  background: linear-gradient(165deg, rgba(20, 34, 52, 0.92), rgba(8, 12, 20, 0.9));
+  border: 0.0625rem solid rgba(116, 228, 255, 0.22);
+  border-radius: 0.8rem;
+  box-shadow: 0 0.8rem 2rem -0.8rem rgba(0, 0, 0, 0.9), inset 0 0.0625rem 0 rgba(255, 255, 255, 0.06);
+  transition: opacity 0.25s;
 }
 #panel:empty { display: none; }
-#panel.right { right: 0.6rem; transform-origin: right center; }
-#panel.left { left: 0.6rem; transform-origin: left center; }
-#panel.top { top: 6vh; }
+#panel.right { right: 0.7rem; transform-origin: right center; }
+#panel.left { left: 0.7rem; transform-origin: left center; }
 #panel.middle { top: 50%; translate: 0 -50%; }
-#panel.top.right, #panel.top.left { transform-origin: top right; }
+#panel.top { top: 6vh; }
+#panel.top.right { transform-origin: top right; }
 #panel.top.left { transform-origin: top left; }
 
-.line { display: flex; align-items: center; gap: 0.35rem; }
-.lbl { width: 2.6rem; flex: none; color: var(--muted); font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.06em; }
-.head .name { font-weight: 800; font-size: 0.8rem; }
-.head .lvl { color: var(--muted); }
-.levelup { margin-left: auto; display: flex; align-items: center; gap: 0.25rem; font-weight: 700; color: var(--ice); animation: pulse 1.2s ease-in-out infinite; }
-@keyframes pulse { 50% { opacity: 0.55; } }
-#panel .key { width: 1.15rem; height: 1.15rem; font-size: 0.62rem; border-radius: 0.22rem; }
-#panel .icon.sm { width: 1.35rem; height: 1.35rem; border-radius: 0.25rem; }
-.seq { display: flex; gap: 0.12rem; }
-.next .icon.sm:first-of-type { border-color: var(--ice); box-shadow: 0 0 0.45rem rgba(111, 227, 255, 0.45); }
-.nextname { color: var(--muted); font-size: 0.62rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.progress { display: flex; gap: 0.12rem; }
-.progress .icon.sm { width: 1.2rem; height: 1.2rem; opacity: 0.35; }
-.progress .icon.sm.have { opacity: 1; border-color: var(--win); }
-.gold b.up { color: var(--win); } .gold b.down { color: var(--loss); }
+.head { display: flex; align-items: center; gap: 0.5rem; padding-bottom: 0.4rem; border-bottom: 0.0625rem solid rgba(116, 228, 255, 0.12); }
+.head .icon { width: 2rem; height: 2rem; border-radius: 0.5rem; border: 0.1rem solid var(--ice); box-shadow: 0 0 0.6rem var(--ice-glow); }
+.head .name { font-weight: 850; font-size: 0.86rem; line-height: 1.1; }
+.head .lvl { color: var(--muted); font-size: 0.68rem; }
+.levelup { margin-left: auto; display: flex; align-items: center; gap: 0.3rem; font-weight: 800; font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ice); animation: glow 1.2s ease-in-out infinite; }
+@keyframes glow { 50% { opacity: 0.55; } }
 
-/* augment badges, placed over each offered card */
+.line { display: grid; grid-template-columns: 2.7rem 1fr; align-items: center; gap: 0.4rem; }
+.lbl { color: var(--faint); font-size: 0.58rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; }
+#panel .key { width: 1.25rem; height: 1.25rem; font-size: 0.64rem; border-radius: 0.25rem; }
+.seq { display: flex; gap: 0.14rem; }
+.seq .step { display: grid; justify-items: center; gap: 0.05rem; }
+.seq .n { font-size: 0.5rem; color: var(--faint); font-variant-numeric: tabular-nums; }
+
+.next-items { display: flex; gap: 0.25rem; align-items: center; }
+.next-items .icon { width: 1.55rem; height: 1.55rem; border-radius: 0.3rem; opacity: 0.8; }
+.next-items .icon:first-child { width: 1.9rem; height: 1.9rem; opacity: 1; border: 0.1rem solid var(--ice); box-shadow: 0 0 0.6rem var(--ice-glow); }
+.nextname { grid-column: 2; color: var(--muted); font-size: 0.62rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 12.5rem; margin-top: -0.15rem; }
+.nextname b { color: var(--text); font-weight: 700; }
+
+.progress { display: flex; gap: 0.14rem; }
+.progress .slot { position: relative; }
+.progress .icon { width: 1.3rem; height: 1.3rem; border-radius: 0.25rem; opacity: 0.32; filter: grayscale(0.6); }
+.progress .have .icon { opacity: 1; filter: none; border-color: var(--win); }
+.progress .have::after { content: ""; position: absolute; right: -0.12rem; bottom: -0.12rem; width: 0.5rem; height: 0.5rem; border-radius: 50%; background: var(--win); box-shadow: 0 0 0 0.1rem #0b111b; }
+
+.gold-bar { display: flex; align-items: center; gap: 0.4rem; font-size: 0.66rem; font-variant-numeric: tabular-nums; }
+.gold-bar .track { flex: 1; height: 0.28rem; border-radius: 1rem; background: rgba(251, 113, 133, 0.45); overflow: hidden; }
+.gold-bar .track i { display: block; height: 100%; background: var(--win); }
+.gold-bar b.up { color: var(--win); } .gold-bar b.down { color: var(--loss); }
+
+/* ---------- augment badges over the offered cards ---------- */
 .badge {
-  position: fixed; transform: translate(-50%, calc(-100% - 0.5rem));
-  display: grid; justify-items: center; gap: 0.2rem;
-  padding: 0.35rem 0.55rem; min-width: 8rem; max-width: 14rem;
-  background: rgba(10, 13, 22, 0.88);
-  border: 0.1rem solid var(--line); border-radius: 0.55rem; text-align: center;
+  position: fixed; transform: translate(-50%, calc(-100% - 0.7rem));
+  display: grid; justify-items: center; gap: 0.25rem;
+  padding: 0.45rem 0.65rem 0.5rem; min-width: 8.5rem; max-width: 15rem;
+  background: linear-gradient(180deg, rgba(18, 28, 44, 0.95), rgba(8, 12, 20, 0.95));
+  border: 0.0625rem solid rgba(140, 200, 240, 0.3); border-radius: 0.7rem; text-align: center;
+  box-shadow: 0 0.8rem 1.6rem -0.8rem rgba(0, 0, 0, 0.9);
+  animation: pop 0.28s var(--ease);
 }
-.badge .tier { font-size: 1.15rem; min-width: 2rem; height: 2rem; }
-.badge.best { border-color: var(--gold); box-shadow: 0 0 1.2rem rgba(241, 199, 91, 0.5); }
-.badge .pick { font-size: 0.64rem; font-weight: 800; letter-spacing: 0.08em; color: var(--gold); text-transform: uppercase; }
-.badge .why { font-size: 0.66rem; color: var(--muted); line-height: 1.25; }
+.badge::after { content: ""; position: absolute; bottom: -0.4rem; left: calc(50% - 0.4rem); width: 0.8rem; height: 0.8rem; background: rgba(8, 12, 20, 0.95); border-right: 0.0625rem solid rgba(140, 200, 240, 0.3); border-bottom: 0.0625rem solid rgba(140, 200, 240, 0.3); transform: rotate(45deg); }
+.badge .tier { font-size: 1.15rem; min-width: 2.1rem; height: 2.1rem; border-radius: 0.5rem; }
+.badge.best { border-color: var(--gold); box-shadow: 0 0 1.6rem -0.2rem rgba(244, 200, 98, 0.55); }
+.badge.best::after { border-color: var(--gold); }
+.badge .pick { font-size: 0.6rem; font-weight: 900; letter-spacing: 0.12em; color: var(--gold); text-transform: uppercase; }
+.badge .why { font-size: 0.64rem; color: var(--muted); line-height: 1.3; }
+@keyframes pop { from { opacity: 0; transform: translate(-50%, calc(-100% - 0.2rem)) scale(0.92); } }
+
+/* ---------- toast (hotkey feedback) ---------- */
+.otoast {
+  position: fixed; top: 8vh; left: 50%; translate: -50% 0;
+  display: none; align-items: center; gap: 0.5rem;
+  padding: 0.55rem 0.9rem; border-radius: 2rem; font-size: 0.82rem; font-weight: 600;
+  background: rgba(10, 16, 26, 0.94); border: 0.0625rem solid var(--line-strong);
+  box-shadow: 0 0.8rem 2rem -0.8rem rgba(0, 0, 0, 0.9);
+}
+.otoast.show { display: flex; animation: drop 0.25s var(--ease); }
+.otoast.busy .ico { color: var(--ice); animation: spin 1s linear infinite; }
+.otoast.good { border-color: color-mix(in srgb, var(--win) 65%, transparent); }
+.otoast.good .ico { color: var(--win); }
+.otoast.bad { border-color: color-mix(in srgb, var(--loss) 65%, transparent); }
+.otoast.bad .ico { color: var(--loss); }
+@keyframes drop { from { opacity: 0; translate: -50% -0.5rem; } }
+@keyframes spin { to { transform: rotate(360deg); } }

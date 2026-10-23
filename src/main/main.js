@@ -82,7 +82,7 @@ function createOverlay() {
 
 function updateOverlay(state) {
   if (!overlayWin) return;
-  const want = settings.get('overlay') && !overlayHidden && !!state.game;
+  const want = (settings.get('overlay') && !overlayHidden && !!state.game) || Date.now() < toastUntil;
   if (want && !overlayWin.isVisible()) overlayWin.showInactive();
   if (!want && overlayWin.isVisible()) overlayWin.hide();
 }
@@ -165,7 +165,7 @@ function keyExpired() {
 // saved and its last four characters.
 function publicSettings() {
   const { riotApiKey, ...rest } = settings.all();
-  return { ...rest, riotApiKeySet: !!riotApiKey, riotApiKeyHint: riotApiKey ? riotApiKey.slice(-4) : '', canPublish: canPublish() };
+  return { ...rest, riotApiKeySet: !!riotApiKey, riotApiKeyHint: riotApiKey ? riotApiKey.slice(-4) : '', canPublish: canPublish(), hotkeyStatus };
 }
 
 function registerIpc() {
@@ -174,6 +174,8 @@ function registerIpc() {
   ipcMain.handle('settings:set', (_e, patch) => {
     const keyChanged = typeof patch.riotApiKey === 'string';
     if (keyChanged) patch = { ...patch, riotApiKey: patch.riotApiKey.trim() };
+    const hotkeyError = changeHotkeys(patch);
+    if (hotkeyError) return { ...publicSettings(), hotkeyError };
     settings.update(patch);
     if (session) { updateOverlay(session.state); updateReader(session.state); }
     const shown = publicSettings();
@@ -202,12 +204,13 @@ function registerIpc() {
   ipcMain.handle('rate-augments', (_e, champId, ids) => augmentsEngine.rateOffer({
     data, community, profile: profile(data.champions[champId]), offer: ids,
   }));
-  ipcMain.handle('scan', () => reader?.scan({ keep: true }));
+  ipcMain.handle('scan', () => rescan());
   ipcMain.handle('open', (_e, url) => shell.openExternal(url));
   if (TEST) {
     // Test hooks: fake an augment offer or its disappearance.
     ipcMain.handle('debug:offer', (_e, cards) => { session.onAugmentOffer(cards); return session.state.game?.augments; });
     ipcMain.handle('debug:cleared', (_e, id) => { session.onAugmentCleared(id); return session.state.game?.augments; });
+    ipcMain.handle('debug:toast', (_e, text, kind) => toast(text, kind));
   }
 }
 
@@ -257,12 +260,72 @@ async function boot() {
   setTimeout(() => { if (!session.lcu.connected) session.maybeAutoCrawl(); }, 20000);
   broadcast('state', session.state);
 
-  globalShortcut.register('Control+Shift+H', () => {
+  registerHotkeys();
+}
+
+// ---------- hotkeys ----------
+
+const HOTKEY_ACTIONS = {
+  hotkeyOverlay: () => {
     overlayHidden = !overlayHidden;
     updateOverlay(session.state);
-  });
-  globalShortcut.register('Control+Shift+J', () => reader.scan({ keep: true }));
+    toast(overlayHidden ? 'Overlay hidden' : 'Overlay shown');
+  },
+  hotkeyScan: () => rescan(),
+};
+let hotkeyStatus = {};
+
+// Registers the hotkeys from Settings and remembers which ones Windows
+// refused (another app already owns the combination).
+function registerHotkeys() {
+  globalShortcut.unregisterAll();
+  hotkeyStatus = {};
+  for (const [name, action] of Object.entries(HOTKEY_ACTIONS)) {
+    const accel = settings.get(name);
+    let ok = false;
+    try { ok = !!accel && globalShortcut.register(accel, action); } catch { ok = false; }
+    hotkeyStatus[name] = ok;
+    log(ok ? `Hotkey ${accel} ready` : `Hotkey ${accel} is taken by another app: pick another one in Settings`);
+  }
+  broadcast('settings', publicSettings());
 }
+
+// A new hotkey only sticks if Windows accepts it; otherwise the old one stays.
+function changeHotkeys(patch) {
+  const names = Object.keys(patch).filter((k) => k in HOTKEY_ACTIONS);
+  if (!names.length) return null;
+  const next = { ...Object.fromEntries(Object.keys(HOTKEY_ACTIONS).map((k) => [k, settings.get(k)])), ...patch };
+  if (next.hotkeyOverlay === next.hotkeyScan) return 'Both hotkeys would be the same combination.';
+  const before = Object.fromEntries(names.map((k) => [k, settings.get(k)]));
+  settings.update(Object.fromEntries(names.map((k) => [k, patch[k]])));
+  registerHotkeys();
+  const failed = names.find((k) => !hotkeyStatus[k]);
+  if (!failed) return null;
+  settings.update(before);
+  registerHotkeys();
+  return `${patch[failed].split('+').join(' + ')} is already used by another app. Try a different combination.`;
+}
+
+async function rescan() {
+  toast('Reading augment cards…', 'busy');
+  const cards = await reader.scan({ keep: true, force: true });
+  if (cards === null) toast('Could not read the screen this time, try again', 'bad');
+  else if (!cards.length) toast('No augment cards found on screen', 'bad');
+  else toast(`Rated ${cards.map((c) => data.augments[c.id]?.name || c.id).join(' · ')}`, 'good');
+}
+
+// Short message on the overlay. When no game is running the overlay is
+// hidden, so it is shown just for the message.
+let toastTimer = null;
+function toast(text, kind = 'info') {
+  broadcast('toast', { text, kind });
+  if (!overlayWin) return;
+  toastUntil = Date.now() + 2600;
+  updateOverlay(session?.state || {});
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => updateOverlay(session?.state || {}), 2700);
+}
+let toastUntil = 0;
 
 app.whenReady().then(boot).catch((e) => { console.error(e); log(`Startup failed: ${e.message}`); });
 app.on('will-quit', () => {

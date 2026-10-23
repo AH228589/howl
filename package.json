@@ -1,6 +1,6 @@
 {
   "name": "howl",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "ARAM Mayhem companion: champ select tiers, build import, in-game overlay and augment helper.",
   "main": "src/main/main.js",
   "private": true,
